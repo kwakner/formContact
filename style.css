@@ -153,7 +153,7 @@ label {
   background-color: var(--Grey2);
 }
 
-/* .success-message {
+.success-message {
   background-color: var(--Grey2);
   position: absolute;
   top: 3%;
@@ -170,7 +170,7 @@ label {
   display: flex;
   gap: 1rem;
   margin-bottom: 0.5rem;
-} */
+} 
 
 @media (min-width: 645px) {
 
