@@ -24,7 +24,7 @@ body {
   background-color: var(--White);
   padding: 1.5rem 1rem;
   border-radius: 1rem;
-  margin: auto;
+  margin: .5rem auto;
   width: 375px;
 }
 
@@ -156,9 +156,8 @@ label {
 .success-message {
   background-color: var(--Grey2);
   position: relative;
-  top: 3%;
-  left: 38%;
-  width: max-content;
+  top: -1100%;
+  left: 18px;
   pointer-events: none;
   color: var(--Grey1);
   padding: 1rem;
