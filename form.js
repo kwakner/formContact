@@ -81,9 +81,9 @@ function onSubmit(e) {
 
   if (!isValid) {
     successMsg.style.display = "block";
-    // setTimeout(function () {
-    //   successMsg.style.display = "none";
-    // }, 2000);
+    setTimeout(function () {
+      successMsg.style.display = "none";
+    }, 2000);
     return true;
   } else {
     successMsg.style.display = "none";
