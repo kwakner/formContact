@@ -1,0 +1,221 @@
+:root {
+  --Green1: hsl(148, 38%, 91%);
+  --Green2: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey1: hsl(186, 15%, 59%);
+  --Grey2: hsl(187, 24%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--Green1);
+}
+
+.form-container {
+  background-color: var(--White);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin: auto;
+  width: 375px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--Grey1);
+  border-radius: 0.4rem;
+  font-size: 17px;
+}
+
+input:focus,
+textarea:focus {
+  cursor: pointer;
+  outline: 1px solid var(--Green2);
+  border: 1px solid var(--Green2);
+}
+
+input:hover,
+textarea:hover {
+  cursor: pointer;
+  border-color: var(--Green2);
+}
+
+.required-input {
+  color: var(--Grey2);
+}
+
+textarea {
+  height: 150px;
+}
+
+.tet {
+  color: var(--Red);
+  margin-top: 0.5rem;
+  font-style: italic;
+  display: none;
+}
+
+.tet.error {
+  display: block;
+}
+
+.form-container h1 {
+  color: var(--Grey2);
+  margin-bottom: 1rem;
+}
+
+label {
+  color: var(--Grey2);
+}
+
+.form-container .form-field,
+.firstn {
+  margin-bottom: 1.3rem;
+}
+
+.form-container .form-field:nth-child(3) .radio-input .radio-option {
+  cursor: pointer;
+  border: 1px solid var(--Grey1);
+  margin: 1rem auto;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form-container .form-field:nth-child(3) input[type="radio"] {
+  appearance: none;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  outline: 2px solid var(--Grey1);
+  outline-offset: 2px;
+}
+
+.form-container .form-field:nth-child(3) input[type="radio"]:checked {
+  background-color: var(--Green2);
+  outline-color: var(--Green2);
+}
+
+.active {
+  background-color: var(--Green1);
+  border: 1px solid var(--Green2);
+}
+
+.form-container .form-field:nth-child(3) .radio-input .radio-option label {
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-container .form-field:nth-child(5) {
+  margin-bottom: 1.5rem;
+}
+
+.form-container .form-field:nth-child(5) div {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-container .form-field:nth-child(5) input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--Green2);
+}
+
+.form-container .form-field:nth-child(5) label {
+  cursor: pointer;
+}
+
+.form-container .subtn {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: var(--Green2);
+  color: var(--White);
+  letter-spacing: 2px;
+  border-radius: 0.5rem;
+}
+
+.form-container .subtn:hover {
+  background-color: var(--Grey2);
+}
+
+/* .success-message {
+  background-color: var(--Grey2);
+  position: absolute;
+  top: 3%;
+  left: 38%;
+  width: max-content;
+  pointer-events: none;
+  color: var(--Grey1);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  display: none;
+}
+
+.success-message .message-head {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+} */
+
+@media (min-width: 645px) {
+
+    body{
+        position: relative;
+    }
+ 
+
+  .form-container {
+    width: 675px;
+    
+  }
+
+  .form-container .form-field:nth-child(1) {
+    display: flex;
+    gap: 0.7rem;
+  }
+
+  .form-container .form-field:nth-child(3) .radio-input {
+    display: flex;
+    gap: 0.7rem;
+  }
+
+  .form-container .form-field:nth-child(3) .radio-input .radio-option {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .success-message {
+    background-color: var(--Grey2);
+    position: relative;
+    top: -970%;
+    left: 120px;
+    width: 60%;
+    pointer-events: none;
+    color: var(--Green1);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    display: none;
+  }
+
+  .close {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+  }
+}

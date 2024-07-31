@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Contact Us</h1>
+      <form id="form-container">
+        <div class="form-field">
+          <div class="firstn">
+            <label for="fname"
+              >First Name <span class="required-input">*</span></label
+            >
+            <input type="text" name="fname" id="fname" class="error-border" />
+            <p class="tet">This field is required</p>
+          </div>
+          <div class="lastn">
+            <label for="lname"
+              >Last Name <span class="required-input">*</span></label
+            >
+            <input type="text" name="lname" id="lname" class="error-border" />
+            <p class="tet">This field is required</p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email"
+            >Email Address <span class="required-input">*</span></label
+          >
+          <input type="email" name="email" id="email" />
+          <p class="tet">Please enter a valid email address</p>
+        </div>
+        <div class="form-field">
+          <label for="query-type"
+            >Query Type <span class="required-input">*</span></label
+          >
+          <div class="radio-input">
+            <div class="radio-option">
+              <input
+                type="radio"
+                name="query-type"
+                id="general"
+                value="General Enquiry"
+              />
+              <label for="general">General Enquiry</label>
+            </div>
+            <div class="radio-option">
+              <input
+                type="radio"
+                name="query-type"
+                id="support"
+                value="Support Request"
+              />
+              <label for="support">Support Request</label>
+            </div>
+          </div>
+          <p class="tet">Please slect a query type</p>
+        </div>
+        <div class="form-field">
+          <label for="mess"
+            >Message <span class="required-input">*</span></label
+          >
+          <textarea name="message" id="mess" rows="4"></textarea>
+          <p class="tet">This field is required</p>
+        </div>
+        <div class="form-field">
+          <div>
+            <input type="checkbox" name="check" id="check" />
+            <label for="check"
+              >I consent to being contacted by the team
+              <span class="required-input">*</span></label
+            >
+          </div>
+          <p class="tet">To submit this form, consent to being contacted</p>
+        </div>
+        <button type="submit" id="btn" class="subtn">Submit</button>
+      </form>
+    </div>
+    <div id="success-message" class="success-message">
+      <div class="close">
+        <div class="message-head">
+          <img src="./images/icon-success-check.svg" alt="" />
+          MessageSent!
+        </div>
+      </div>
+
+      <p>Thanks for completing the form. We'll be in touch soon</p>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
